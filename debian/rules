@@ -4,7 +4,7 @@
 	dh $@
 
 override_dh_auto_install:
-	make install
+	make install DESTDIR=$(CURDIR)/debian/podrun
 
 override_dh_auto_build:
 	:
