@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### ⚙️ Miscellaneous Tasks
 
+- *(ci)* Fix gitea and github repo names in release sync workflow - ([5693269](https://git.0xmax42.io/maxp/podrun/commit/5693269d6755a2f59b400b3356483a1f924dfed0))
 - *(ci)* Sync gitea releases to github - ([a4c3056](https://git.0xmax42.io/maxp/podrun/commit/a4c30565f04b760445a0ef1916462947c0891ccb))
 
 ## [0.1.0-pr.2](https://git.0xmax42.io/maxp/podrun/compare/v0.1.0-pr.1..v0.1.0-pr.2) - 2026-02-20
