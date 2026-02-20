@@ -1,0 +1,19 @@
+Source: podrun
+Section: utils
+Priority: optional
+Maintainer: 0xMax42 <debian@0xMax42.io>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://git.0xmax42.io/maxp/podrun/
+Vcs-Git: https://git.0xmax42.io/maxp/podrun.git
+Vcs-Browser: https://git.0xmax42.io/maxp/podrun
+
+Package: podrun
+Architecture: all
+Depends: ${misc:Depends}, podman (>= 5.0), bash
+Description: podman run wrapper with build support
+ Podrun is a wrapper around podman run that adds 
+ support for building images on the fly using systemd units. 
+ It allows you to define a build unit for your image, 
+ and if the image is not found locally, it will trigger 
+ the build unit before running the container.
