@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.1.0](https://git.0xmax42.io/maxp/podrun/compare/v0.1.0-pr.2..v0.1.0) - 2026-02-20
 
 ### ⚙️ Miscellaneous Tasks
 
