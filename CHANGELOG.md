@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.0-pr.1](https://git.0xmax42.io/maxp/podrun/compare/v0.1.0-pr.0..v0.1.0-pr.1) - 2026-02-20
+
+### 🚀 Features
+
+- Install readme alongside podrun helper - ([e031969](https://git.0xmax42.io/maxp/podrun/commit/e0319699ad8664ca1b5f9510b13b0dbc0aa804b3))
+
+### 📚 Documentation
+
+- Add readme describing podrun design and usage - ([dd973d8](https://git.0xmax42.io/maxp/podrun/commit/dd973d8276d44613500a79da9c76cf04ae2aef39))
+
 ## [0.1.0-pr.0] - 2026-02-20
 
 ### 🚀 Features
