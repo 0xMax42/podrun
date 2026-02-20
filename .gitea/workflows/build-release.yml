@@ -43,8 +43,8 @@ jobs:
           gitea_token: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
           gitea_url: https://git.0xmax42.io
           gitea_owner: maxp
-          gitea_repo: invariance-hash
+          gitea_repo: podrun
           tag_name: ${{ github.event.release.tag_name }}
           github_token: ${{ secrets.SYNC_GITHUB_TOKEN }}
           github_owner: 0xmax42
-          github_repo: invariance-hash
+          github_repo: podrun
