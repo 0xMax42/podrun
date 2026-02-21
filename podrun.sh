@@ -3,8 +3,31 @@ set -euo pipefail
 
 verbose=${VERBOSE:-0}
 
-image="${1:?usage: podrun IMAGE [args...]}"
-shift || true
+run_opts=()
+container_args=()
+image=""
+
+# Everything before -- belongs to podman
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+    --)
+        shift
+        image="${1:?IMAGE missing after --}"
+        shift
+        container_args=("$@")
+        break
+        ;;
+    *)
+        run_opts+=("$1")
+        shift
+        ;;
+    esac
+done
+
+if [[ -z "${image}" ]]; then
+    echo "usage: podrun [podman-run-options...] -- IMAGE [container-args...]" >&2
+    exit 1
+fi
 
 # -------------------------------
 # Log helper
@@ -116,4 +139,7 @@ if [[ "${need_build}" == true ]]; then
     fi
 fi
 
-exec podman run "${image}" "$@"
+exec podman run \
+    "${run_opts[@]}" \
+    "${image}" \
+    "${container_args[@]}"
